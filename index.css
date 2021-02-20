@@ -1,0 +1,118 @@
+body {
+  background-color: #353b48;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.js-clock {
+  margin-top: 50px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+button {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  background-color: #cceeff;
+  padding: 1px;
+}
+
+li {
+  color: #cceeff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.js-title {
+  font-size: 70px;
+  margin-top: 50px;
+}
+
+.js-greetings {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 30px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.clicked {
+  color: #738a8b;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.js-weather {
+  font-size: 15px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+input {
+  border-radius: 25px;
+  border: 1.5px solid black;
+  width: 100px;
+  height: 30px;
+  background-color: #ffffff;
+  opacity: 0.9;
+  font-weight: 600;
+  transition: width 200ms;
+}
+button:hover {
+  outline: none;
+  background-color: rgb(100, 149, 237, 0.4);
+}
+input:focus {
+  outline: none;
+  width: 200px;
+}
+
+.js-toDoList {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  width: 250px;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 5px 20px;
+}
+
+ul li:before {
+  content: "✔";
+  color: cornflowerblue;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 5px 6px 0px;
+}
